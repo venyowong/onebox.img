@@ -46,7 +46,16 @@
 5. 进入 1Box 预装程序目录：cd /opt/onebox
 6. ./install.sh
 7. 连接硬盘
-8. 访问 [1Box 初始化文档](http://onebox.local/#/other/docs)
+8. 挂载移动硬盘
+
+    目前 1Box 只支持一个移动硬盘，且默认路径为 /cloud，但 iStoreOS 无法自动将移动硬盘挂载到指定目录，因此需要用户在 iStoreOS 中手动挂载移动硬盘
+
+    - 请先打开 [【iStoreOS】如何正确挂载硬盘](https://www.koolcenter.com/t/topic/641) 熟悉挂载方法
+    - 打开 [iStoreOS](http://onebox.local:81) 开始挂载
+    - 若挂载失败，可能是磁盘数据格式损坏。若数据可再生，请考虑格式化后重新挂载，磁盘格式建议选择 ext4；若数据重要且不可再生，切勿格式化，请寻求专业人士帮助
+9. 由于 1Box 依赖移动硬盘，为了避免在硬盘未挂载前 1Box 就写入数据，请将上一步挂载的硬盘配置 [挂载前等待磁盘](http://onebox.local:81/cgi-bin/luci/admin/system/tuning/boot)
+10. 设置 [硬盘休眠](http://onebox.local:81/cgi-bin/luci/admin/services/hd_idle)，建议设置在 1 天以上，避免夜间休息时，硬盘自动休眠了
+11. 访问 [1Box 初始化文档](http://onebox.local/#/other/docs)
 
 ## 1Box 服务使用说明
 
