@@ -3,7 +3,7 @@
 
 ## 下载镜像
 
-[Releases](./releases)
+[Releases](https://github.com/venyowong/onebox.img/releases)
 
 刷镜像时，请先解压出 .img 文件再烧录
 
