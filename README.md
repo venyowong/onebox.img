@@ -10,6 +10,13 @@
 
 1. [OpenWRT](https://openwrt.org/)
 2. [Jellyfin](https://github.com/jellyfin/jellyfin)(非必选)
+    ```
+    mkdir /cloud/Configs/Jellyfin
+    mkdir /cloud/Caches/Jellyfin
+    bind:/cloud:/media
+    bind:/cloud/Configs/Jellyfin:/config
+    bind:/cloud/Caches/Jellyfin:/cache
+    ```
 
 ## 安装部署
 
