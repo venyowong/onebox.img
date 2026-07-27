@@ -1,0 +1,22 @@
+services:
+  jellyfin:
+    # 国内用户请使用代理镜像，可根据实际情况替换为其他代理地址
+    image: m.daocloud.io/docker.io/jellyfin/jellyfin:latest
+    container_name: jellyfin
+    pull_policy: if_not_present
+    network_mode: 'host'
+    environment:
+      - PUID=0
+      - PGID=0
+      - TZ=Asia/Shanghai
+      - JELLYFIN_PublishedServerUrl=http://onebox.local:8096
+    volumes:
+      - '/cloud/Configs/Jellyfin:/config'
+      - '/cloud/Caches/Jellyfin:/cache'
+      - '/cloud:/media'
+    restart: 'unless-stopped'
+    # 可选：在资源受限的设备上限制内存使用
+    # deploy:
+    #   resources:
+    #     limits:
+    #       memory: 512M

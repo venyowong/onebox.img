@@ -2,7 +2,6 @@
 
 apk update
 apk add luci-app-aria2
-apk add ffmpeg
 apk add rpcd-mod-file
 /etc/init.d/rpcd restart
 apk add luci-app-samba4
