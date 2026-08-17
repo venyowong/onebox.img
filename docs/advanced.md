@@ -50,7 +50,7 @@ EasyTier
 3. 下载 [EasyTier 客户端](https://www.easytier.cn/guide/download.html)，根据 [官方教程](https://www.easytier.cn/guide/gui/basic.html)，使用与上面相同的网络名称和密码快速组网
 4. 成功组网后，就可以在外网使用类似于 `10.126.126.2` 这样的 IP 访问 1Box 服务了
 
-系统备份
+OpenWRT 系统备份
 ------
 
 1Box 建议您定期使用 OpenWRT 的系统备份功能，将系统的配置以及 1Box 的数据/配置进行备份以便还原

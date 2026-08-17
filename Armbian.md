@@ -15,8 +15,7 @@
 3. 连接、挂载移动硬盘到 /cloud
    - sudo mkdir /cloud
    - sudo mount /dev/sda1 /cloud
-4. 
-5. 将 [程序包](https://github.com/venyowong/onebox.img/releases) 解压到 /opt/onebox
-6. cd /opt/onebox
-7. ./install.sh
-8.  访问 [1Box 初始化文档](http://onebox.local/#/other/docs)
+4. 将 [程序包](https://github.com/venyowong/onebox.img/releases) 解压到 /opt/onebox
+5. cd /opt/onebox
+6. ./install.sh
+7.  访问 [1Box 初始化文档](http://onebox.local/#/other/docs)
